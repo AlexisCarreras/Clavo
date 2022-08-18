@@ -3,7 +3,7 @@ import Logo from '../../../../../assets/Images/Logo/logo.png';
 
 const useStyles = makeStyles ({
   img: {
-    width: '110px',
+    width: '150px',
     borderRadius:'100px',
   },
 });

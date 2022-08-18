@@ -6,19 +6,19 @@ import Icons from '../Icons';
 
 import './index.css';
 
-
 const useStyles = makeStyles ({
-  root: {
-    alignItems: 'center',
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    margin: '3rem 0 0 0'
-  },
+  // root: {
+  //   alignItems: 'center',
+  //   display: 'flex',
+  //   flexDirection: 'column',
+  //   justifyContent: 'center',
+  //   margin: '6rem 0 0 0',
+
+  // },
   text: {
     fontFamily: 'Another America',
     fontStyle: 'normal',
-    fontSize: '50px',
+    fontSize: '90px',
     color: '#FAFAFA',
     marginBottom: '3rem',
   },
@@ -40,12 +40,12 @@ export default function ButtonAppBar() {
   const classes = useStyles();
 
   return (
-    <div className={ classes.root }>
+    <div className="root">
       <ImagesLogo />
       <Typography className={ classes.text } variant="h1" component="h2">
         C.L.A.V.O
       </Typography>
-
+ 
       <Card />
 
       <button className="buttonTicket">

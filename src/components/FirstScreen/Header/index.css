@@ -1,4 +1,14 @@
   /* From uiverse.io */
+
+  .root {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 6rem 0 0 0;
+    z-index: 0 !important;
+  }
+
   .buttonTicket {
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
@@ -21,6 +31,7 @@
     touch-action: manipulation;
     white-space: nowrap;
     cursor: pointer;
+    margin-top: 2rem;
     transition: all .3s;
    }
    

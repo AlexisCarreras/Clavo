@@ -1,15 +1,10 @@
-// import { makeStyles } from '@material-ui/core';
-import { Overview } from '../containers';
+import Routes from '../routes';
 
-// const useStyles = makeStyles ({
-// }); 
-
-function App() {
-  // const classes = useStyles();
+const App = () => {
 
   return (
     <div>
-        <Overview />
+        <Routes />
     </div>
   );
 }
