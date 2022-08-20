@@ -1,0 +1,24 @@
+.background {
+    background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../../../assets/Images/background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 28vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.logo {
+    width: 130px;
+    border-radius: 100%;
+}
