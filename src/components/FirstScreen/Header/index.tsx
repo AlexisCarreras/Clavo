@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Typography } from '@material-ui/core';
 import Card from '../Card/index';
 import Icons from '../Icons';
+import { Link } from 'react-router-dom';
 
 import './index.css';
 
@@ -48,9 +49,11 @@ export default function ButtonAppBar() {
  
       <Card />
 
-      <button className="buttonTicket">
-        <span className="text">Conseguí tus anticipadas</span>
-      </button>
+      <Link to="/obtenerEntradas" className="link">
+        <button className="buttonTicket">
+          <span className="text">Conseguí tus anticipadas</span>
+        </button>
+      </Link>
 
       <Icons />
     </div>

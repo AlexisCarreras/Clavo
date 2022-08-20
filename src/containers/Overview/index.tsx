@@ -1,10 +1,10 @@
-import { Header } from "../../components";
+import { Body } from "../../components";
 import './index.css';
 
 const Overview = () => {
   return (
     <section>
-        <Header/>
+        <Body />
     </section>
   ) 
 }
