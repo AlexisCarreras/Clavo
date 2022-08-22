@@ -1,4 +1,4 @@
-import { Headboard, Header } from '../../components';
+import { EventInformation, Headboard, Header, Overview } from '../../components';
 import './index.css';
 
 const TicketOperation = () => {
@@ -6,6 +6,10 @@ const TicketOperation = () => {
     <>
       <Header />
       <Headboard />
+      <div className='containerCards'>
+        <Overview />
+        <EventInformation />
+      </div>
     </>
   )
 }

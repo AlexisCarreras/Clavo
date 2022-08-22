@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+
+.root {
+    background-color: #F6F6F6;
+    margin: 0;
+}
+ 
+.flyerImg {
+    width: 500px;
+}
+
+.containerArticles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.articleDate {
+    width: 45%;
+
+}
+
+.articleInfo {
+    width: 55%;
+
+}
+
+/* Calendario */
+.containerCalendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar {
+    position: relative;
+    width: 140px;
+    background-color: #F6F6F6;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.calendar #monthName {
+    position: relative;
+    padding: 12px 10px;
+    background: #020F1F;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.calendar #dayName {
+    margin-top: 13px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #999;
+}
+
+.calendar #dayNumber {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    line-height: 1em;
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+}
+
+.calendar #year {
+    margin-bottom: 13px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #999;
+}
+
+/* Textos */
+.title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.subtitle {
+    font-family: 'Nunito';
+    font-weight: 300;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.texts {
+    font-family: 'Nunito';
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0 10px 12px;
+}
+
+.iconText {
+    display: flex;
+    align-items: center;
+}
+
+.buttonMaps {
+    color: inherit;
+    text-transform: none !important;
+    text-decoration: underline #111 !important;
+}

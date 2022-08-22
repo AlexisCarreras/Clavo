@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+
+.paper {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleInformation {
+    margin: 35px 0 15px 0;
+    background-color: #1A406F;
+    width: 85%;
+    color: #fff;
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: 15px;
+    padding: 7px;
+}
+
+.buttonBuy {
+    padding: 10px 40px 10px 40px !important;
+    background: #3D00E6 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+    color: #fff !important;
+    font-family: 'Roboto' !important;
+    font-weight: 300 !important;
+    font-size: 13px !important;
+    border-radius: 10px !important;
+    margin-top: 35px !important;
+    margin-bottom: 35px !important;
+}
+
+.titleFecha {
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    color: #1A406F;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.divider {
+    width: 80%;
+}
