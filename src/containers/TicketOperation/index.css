@@ -4,5 +4,6 @@
     padding-bottom: 100px;
     display: flex;
     justify-content: space-around;
-
+    padding-left: 12%;
+    padding-right: 12%;
 }

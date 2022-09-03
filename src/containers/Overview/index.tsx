@@ -3,9 +3,9 @@ import './index.css';
 
 const Overview = () => {
   return (
-    <section>
+    <div className="fondoInicio">
         <Body />
-    </section>
+    </div>
   ) 
 }
 

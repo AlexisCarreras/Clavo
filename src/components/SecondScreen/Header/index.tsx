@@ -54,7 +54,7 @@ const Header = () => {
 
   return (
     <div >
-      <AppBar position="static">
+      <AppBar position="fixed">
         <Toolbar className={classes.toolBar}>
           
           <Link to="/" className={classes.link}>
