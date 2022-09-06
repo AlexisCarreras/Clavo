@@ -5,9 +5,9 @@ import './index.css';
 
 const useStyles = makeStyles ({
   text: {
-    fontFamily: 'Another America',
+    fontFamily: 'Inter',
     fontStyle: 'normal',
-    fontSize: '70px',
+    fontSize: '30px',
     color: '#FAFAFA',
   },
 }); 

@@ -16,9 +16,9 @@ const useStyles = makeStyles ({
     margin: '6rem 0 0 0',
   },
   text: {
-    fontFamily: 'Another America',
+    fontFamily: 'Inter',
     fontStyle: 'normal',
-    fontSize: '90px',
+    fontSize: '40px',
     color: '#FAFAFA',
     marginBottom: '3rem',
   },
