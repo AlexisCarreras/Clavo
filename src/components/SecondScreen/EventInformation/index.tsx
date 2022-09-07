@@ -19,6 +19,9 @@ const useStyles = makeStyles ({
       backgroundColor: '#1C0068',
     }
   },
+  link: {
+    textDecoration: 'none',
+  }
 });  
  
 const EventInformation = () => {
@@ -74,7 +77,7 @@ const EventInformation = () => {
         </p>
         <Divider className='divider'/> 
 
-        <a href="https://mpago.la/2cRfrLs" rel="noreferrer" target="_blank">
+        <a href="https://mpago.la/2cRfrLs" className={classes.link} rel="noreferrer" target="_blank">
           <Button variant="contained" className={classes.buttonBuy}>
             COMPRAR ENTRADAS
           </Button>

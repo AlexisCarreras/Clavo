@@ -12,12 +12,15 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-between',
     backgroundColor: '#111',
   },
-  link: {
+  linkBack: {
     textDecoration: 'none',
     '&:hover': {
       textDecoration: 'underline',
       color: 'white'  
     }
+  }, 
+  link: {
+    textDecoration: 'none',
   }, 
   iconArrow: {
     color: '#FFFF'
@@ -57,7 +60,7 @@ const Header = () => {
       <AppBar position="fixed">
         <Toolbar className={classes.toolBar}>
           
-          <Link to="/" className={classes.link}>
+          <Link to="/" className={classes.linkBack}>
             <IconButton edge="start" className={classes.backButton} color="inherit" aria-label="menu">
               <KeyboardBackspaceIcon className={classes.iconArrow} />
               <Typography variant="h6" className={classes.textBack}>
@@ -66,11 +69,13 @@ const Header = () => {
             </IconButton>
           </Link>
 
+          <Link to="/comocomprar" className={classes.link}>
           <Button className={classes.button} variant="contained" color="primary">
             <Typography variant="h6" className={classes.textButton}>
                 Cómo Comprar
             </Typography>
           </Button>
+          </Link>
 
         </Toolbar>
       </AppBar>
