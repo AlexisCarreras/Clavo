@@ -60,7 +60,7 @@ const Header = () => {
   const links = () => {
     
     return (
-      localPage == 'true'
+      localPage === 'true'
       ?
         <Link to="/" className={classes.linkBack}>
           <IconButton edge="start" className={classes.backButton} color="inherit" aria-label="menu">

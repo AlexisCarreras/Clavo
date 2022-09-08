@@ -19,7 +19,7 @@ const useStyles = makeStyles ({
 export default function Modal() {
   const classes = useStyles();
 
-  const [open, setOpen] = React.useState(true);
+  const [open] = React.useState(true);
 
   const [valueNombre, setValueNombre] = useState("");
   const [valueApellido, setValueApellido] = useState("");

@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core';
-import { EventInformation, Headboard, Header, Overview } from '../../components';
+import { EventInformation, Overview } from '../../components';
 import Modal from '../../components/Confirm/Modal';
 
 const useStyles = makeStyles ({
