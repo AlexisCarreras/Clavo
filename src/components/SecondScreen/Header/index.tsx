@@ -55,20 +55,39 @@ const useStyles = makeStyles((theme) => ({
 const Header = () => {
   const classes = useStyles();
 
-  return (
-    <div >
-      <AppBar position="fixed">
-        <Toolbar className={classes.toolBar}>
-          
-          <Link to="/" className={classes.linkBack}>
-            <IconButton edge="start" className={classes.backButton} color="inherit" aria-label="menu">
+  const localPage = localStorage.getItem('pageIndex'); 
+
+  const links = () => {
+    
+    return (
+      localPage == 'true'
+      ?
+        <Link to="/" className={classes.linkBack}>
+          <IconButton edge="start" className={classes.backButton} color="inherit" aria-label="menu">
               <KeyboardBackspaceIcon className={classes.iconArrow} />
               <Typography variant="h6" className={classes.textBack}>
                 Volver
               </Typography>
             </IconButton>
-          </Link>
+        </Link>
+      :
+        <Link to="/obtenerentradas" className={classes.linkBack}>
+          <IconButton edge="start" className={classes.backButton} color="inherit" aria-label="menu">
+              <KeyboardBackspaceIcon className={classes.iconArrow} />
+              <Typography variant="h6" className={classes.textBack}>
+                Volver
+              </Typography>
+            </IconButton>
+        </Link>
+    )
+  }
+  
 
+  return (
+    <div >
+      <AppBar position="fixed">
+        <Toolbar className={classes.toolBar}>
+          { links() }
           <Link to="/comocomprar" className={classes.link}>
           <Button className={classes.button} variant="contained" color="primary">
             <Typography variant="h6" className={classes.textButton}>

@@ -2,6 +2,9 @@ import { EventInformation, Headboard, Header, Overview } from '../../components'
 import './index.css';
 
 const TicketOperation = () => {
+
+  localStorage.setItem('pageIndex', 'true');
+
   return (
     <>
       <Header />
