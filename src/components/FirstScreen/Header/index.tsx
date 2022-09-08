@@ -48,7 +48,7 @@ export default function Body() {
  
       <Card />
 
-      <Link to="/obtenerentradas" className="link">
+      <Link to="/ObtenerEntradas" className="link">
         <button className="buttonTicket">
           <span className="text">Conseguí tus anticipadas</span>
         </button>

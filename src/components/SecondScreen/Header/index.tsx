@@ -71,7 +71,7 @@ const Header = () => {
             </IconButton>
         </Link>
       :
-        <Link to="/obtenerentradas" className={classes.linkBack}>
+        <Link to="/ObtenerEntradas" className={classes.linkBack}>
           <IconButton edge="start" className={classes.backButton} color="inherit" aria-label="menu">
               <KeyboardBackspaceIcon className={classes.iconArrow} />
               <Typography variant="h6" className={classes.textBack}>
@@ -88,7 +88,7 @@ const Header = () => {
       <AppBar position="fixed">
         <Toolbar className={classes.toolBar}>
           { links() }
-          <Link to="/comocomprar" className={classes.link}>
+          <Link to="/ComoComprar" className={classes.link}>
           <Button className={classes.button} variant="contained" color="primary">
             <Typography variant="h6" className={classes.textButton}>
                 Cómo Comprar

@@ -13,9 +13,9 @@ const Router = () => {
     <BrowserRouter>
         <Routes>
             <Route path="" element={ <Overview /> } />
-            <Route path="obtenerentradas" element={ <TicketOperation /> } />
-            <Route path="comocomprar" element={ <HowToBuy /> } />
-            <Route path="confirmatusdatos" element={ <DataEntry /> } />
+            <Route path="ObtenerEntradas" element={ <TicketOperation /> } />
+            <Route path="ComoComprar" element={ <HowToBuy /> } />
+            <Route path="ConfirmaTusDatos" element={ <DataEntry /> } />
         </Routes>
         
     </BrowserRouter>
