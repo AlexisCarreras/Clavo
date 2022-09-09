@@ -6,6 +6,7 @@ import {
 import { Overview } from "../containers";
 import DataEntry from "../containers/DataEntry";
 import HowToBuy from "../containers/HowToBuy";
+import Prueba from "../containers/Prueba";
 import TicketOperation from "../containers/TicketOperation";
 
 const Router = () => {
@@ -13,9 +14,10 @@ const Router = () => {
     <BrowserRouter>
         <Routes>
             <Route path="" element={ <Overview /> } />
-            <Route path="ConfirmaTusDatos" element={ <DataEntry /> } />
             <Route path="/ObtenerEntradas" element={ <TicketOperation /> } />
             <Route path="/ComoComprar" element={ <HowToBuy /> } />
+            <Route path="/ConfirmaTusDatos" element={ <DataEntry /> } />
+            <Route path="/Prueba" element={ <Prueba /> } />
         </Routes>
     </BrowserRouter>
   )
