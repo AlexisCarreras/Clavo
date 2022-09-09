@@ -65,37 +65,7 @@ const HowToBuy = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className={classes.text}>
-            En nuestra página principal tendrás una lista de los próximos shows de la banda. Elegí el evento al que quieras asistir, veras toda la información sobre el mismo y tendrás disponible el botón de COMPRAR ENTRADAS.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion className={classes.acordion}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon className={classes.icon} />}
-          aria-controls="panel2a-content"
-          id="panel2a-header"
-        >
-          <Typography className={classes.heading}>Elegí la cantidad de entradas</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className={classes.text}>
-            Una vez que encontraste tu evento, corroborá que sea en día y lugar que vos estás buscando y luego bajá, y elegí el tipo y la cantidad de entradas que querés comprar; luego dale click a “Comprar!”.
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion className={classes.acordion}>
-        <AccordionSummary
-          expandIcon={<ExpandMoreIcon className={classes.icon} />}
-          aria-controls="panel1a-content"
-          id="panel1a-header"
-        >
-          <Typography className={classes.heading}>Cargá tus datos</Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography className={classes.text}>
-            A continuación, llenas tus datos: Nombres, apellidos, DNI y email.
-            Es MUY importante que todos los datos sean reales ya que, tu nombre, apellido y DNI son necesarios para que puedas acceder al show, y el email que pongas es a donde te van a llegar las entradas.
-            Una vez cargados todos los datos, tenés que tildar más abajo que leíste y aceptas los Términos y Condiciones de nuestro sitio, y una vez hecho esto, haces click en “Realizar el pedido”.
+            En nuestra página principal tendrás un listado de los próximos shows de la banda. Elegí el evento al que quieras asistir, veras toda la información sobre el mismo y tendrás disponible el botón de COMPRAR ENTRADAS.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -109,7 +79,23 @@ const HowToBuy = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className={classes.text}>
-            La venta de entradas se realiza por medio de Mercado Pago, podes abonar tu entrada con todos los medios de pagos disponibles por la plataforma. 
+            La venta de entradas se realiza por medio del sistema de Mercado Pago. <br />
+            Podes abonar tu entrada con los distintos medios de pagos disponibles por la plataforma: Mercado Pago, Débito, Crédito, y Efectivo (Pago Fácil o Rapipago).
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className={classes.acordion}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className={classes.icon} />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography className={classes.heading}>Cargá tus datos</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className={classes.text}>
+            Una vez realizado y confirmado el pago, podes volver al sitio para llenar tus datos: Nombre, apellido, celular y email. Es MUY importante que todos los datos sean reales ya que cualquier consulta o soporte necesario, se necesitaran los datos del comprador. <br/>
+            Una vez cargados todos los datos, haces click en “CONFIRMAR”.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -123,7 +109,35 @@ const HowToBuy = () => {
         </AccordionSummary>
         <AccordionDetails>
           <Typography className={classes.text}>
-            Una vez que realices la compra y completes tus datos, serás redirigido a WhatsApp, donde coordinaras la entrega de tu entrada durante esa semana.
+            Una vez que realices la compra y completes tus datos, se descargará el comprobante de tu entrada y serás redirigido a WhatsApp, donde coordinaras la entrega de tu entrada física durante esa semana.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className={classes.acordion}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className={classes.icon} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.heading}>¿Qué pasa si falla o se demora el proceso de compra?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className={classes.text}>
+            Si ocurre un error o demora en el pago a través de la plataforma de mercado pago, envianos el comprobante o captura por email: clavosupport@hotmail.com.
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion className={classes.acordion}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon className={classes.icon} />}
+          aria-controls="panel2a-content"
+          id="panel2a-header"
+        >
+          <Typography className={classes.heading}>¿Qué pasa si no se descarga mi comprobante de entrada?</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography className={classes.text}>
+            Si la descarga no se realiza automáticamente, no te preocupes. Envía el mensaje por WhatsApp generado automáticamente para poder coordinar la entrega de tu entrada física y pedinos tu comprobante virtual.
           </Typography>
         </AccordionDetails>
       </Accordion>
