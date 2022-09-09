@@ -21,5 +21,5 @@ const DataEntry = () => {
     </div> 
   )
 }
-
+ 
 export default DataEntry;

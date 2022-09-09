@@ -3,7 +3,6 @@ import { Button, Divider, Paper } from '@material-ui/core';
 
 import Info from './texts.json';
 import './index.css';
-import { Link } from 'react-router-dom';
  
 const useStyles = makeStyles ({
   buttonBuy: {
@@ -78,13 +77,13 @@ const EventInformation = () => {
         </p>
         <Divider className='divider'/> 
 
-        <Link to="/ConfirmaTusDatos" className={classes.link}>
-        {/* <a href="https://mpago.la/2kvEFD3" className={classes.link} rel="noreferrer" target="_blank"> */}
+        {/* <Link to="/ConfirmaTusDatos" className={classes.link}> */}
+        <a href="https://mpago.la/2kvEFD3" className={classes.link} rel="noreferrer" target="_blank">
           <Button variant="contained" className={classes.buttonBuy}>
             COMPRAR ENTRADAS
           </Button>
-        {/* </a> */}
-        </Link>
+        </a>
+        {/* </Link> */}
       </Paper>
     </div>
   )
