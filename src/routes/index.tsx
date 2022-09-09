@@ -4,9 +4,8 @@ import {
     Route,
   } from "react-router-dom";
 import { Overview } from "../containers";
-import DataEntry from "../containers/DataEntry";
+import Confirm from "../containers/Confirm";
 import HowToBuy from "../containers/HowToBuy";
-import Prueba from "../containers/Prueba";
 import TicketOperation from "../containers/TicketOperation";
 
 const Router = () => {
@@ -16,10 +15,9 @@ const Router = () => {
             <Route path="" element={ <Overview /> } />
             <Route path="/ObtenerEntradas" element={ <TicketOperation /> } />
             <Route path="/ComoComprar" element={ <HowToBuy /> } />
-            <Route path="/ConfirmaTusDatos" element={ <DataEntry /> } />
-            <Route path="/Prueba" element={ <Prueba /> } />
+            <Route path="/Confirmar" element={ <Confirm /> } />
         </Routes>
-    </BrowserRouter>
+    </BrowserRouter> 
   )
 }
 

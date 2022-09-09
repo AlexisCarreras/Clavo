@@ -38,7 +38,7 @@ const useStyles = makeStyles ((theme) => ({
 }) 
 ); 
  
-const Prueba = () => { 
+const Confirm = () => { 
   const classes = useStyles();
 
   return (
@@ -52,4 +52,4 @@ const Prueba = () => {
   )
 }   
 
-export default Prueba; 
+export default Confirm; 
