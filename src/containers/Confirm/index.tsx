@@ -5,35 +5,7 @@ import Modal from '../../components/Confirm/Modal';
 const useStyles = makeStyles ((theme) => ({
   root: {
     backgroundColor: '#F6F6F6',
-    minHeight: '90.2vh',
-  },
-  containerAcordion: {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flexDirection: 'column',
-    marginTop: '5vh',
-    paddingBottom: '5vh'
-  }, 
-  acordion: {
-    backgroundColor: '#333',
-    width: '70%', 
-  },
-  title: {
-    color: '#333',
-    paddingBottom: '5vh',
-    fontSize: '23px',
-  },
-  heading: {
-    color: '#FAFAFA',
-    fontSize: theme.typography.pxToRem(15),
-    fontWeight: theme.typography.fontWeightRegular, 
-  },
-  icon: {
-    color: 'white',
-  },
-  text: {
-    color: '#FAFAFA'
+    width: '100vw',
   },
 }) 
 ); 

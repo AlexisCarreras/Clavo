@@ -11,8 +11,9 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: '#111',
+    width: '100%',
   },
-  linkBack: {
+  linkBack: { 
     textDecoration: 'none',
     '&:hover': {
       textDecoration: 'underline',
