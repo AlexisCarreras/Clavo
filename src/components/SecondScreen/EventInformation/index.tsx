@@ -77,7 +77,7 @@ const EventInformation = () => {
         </p>
         <Divider className='divider'/>
           
-        <a href="https://mpago.la/14VWhbD" className={classes.link}>
+        <a href="https://mpago.la/22JskVg" className={classes.link}>
           <Button variant="contained" className={classes.buttonBuy}>
             COMPRAR ENTRADAS
           </Button>  
