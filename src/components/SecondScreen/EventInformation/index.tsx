@@ -3,7 +3,6 @@ import { Button, Divider, Paper } from '@material-ui/core';
 
 import Info from './texts.json';
 import './index.css';
-import { Link } from 'react-router-dom';
  
 const useStyles = makeStyles ({
   buttonBuy: {
