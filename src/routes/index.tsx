@@ -15,7 +15,7 @@ const Router = () => {
             <Route path="/ObtenerEntradas" element={ <TicketOperation /> } />
             <Route path="/ComoComprar" element={ <HowToBuy /> } />
             <Route path="/Confirmar" element={ <Confirm /> } />
-            
+
             <Route path="/" element={ <Overview /> } />
         </Routes>
     </BrowserRouter> 
