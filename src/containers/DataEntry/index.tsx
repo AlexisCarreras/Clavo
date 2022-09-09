@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core';
-import { EventInformation, Overview } from '../../components';
 import Modal from '../../components/Confirm/Modal';
 
 const useStyles = makeStyles ({
@@ -13,10 +12,6 @@ const DataEntry = () => {
 
   return (
     <div className={classes.root}>
-      <div className='containerCards'>
-        <Overview />
-        <EventInformation />
-      </div>
       <Modal /> 
     </div> 
   )
