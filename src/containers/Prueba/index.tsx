@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
  
 import { Headboard, Header } from '../../components';
+import Modal from '../../components/Confirm/Modal';
 
 const useStyles = makeStyles ((theme) => ({
   root: {
@@ -67,6 +68,7 @@ const Prueba = () => {
         </AccordionDetails>
       </Accordion>
       </div>
+      <Modal /> 
     </div>
   )
 }   
