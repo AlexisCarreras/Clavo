@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core';
-import { EventInformation, Overview } from '../../components';
+import { EventInformation, Headboard, Header, Overview } from '../../components';
 import Modal from '../../components/Confirm/Modal';
 
 const useStyles = makeStyles ((theme) => ({
@@ -43,6 +43,8 @@ const Confirm = () => {
 
   return (
     <div className={classes.root}>
+      <Header />
+      <Headboard />
       <div className='containerCards'>
         <Overview /> 
         <EventInformation />
