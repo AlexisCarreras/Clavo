@@ -76,10 +76,7 @@ const EventInformation = () => {
         <p className='ultimoTexto'> 
           {Info.horarioDj} 
         </p>
-        <Divider className='divider'/> 
-
-        <Link to="/ConfirmaTusDatos" className={classes.link}> 
-        </Link> 
+        <Divider className='divider'/>
         
         <a href="https://mpago.la/2kvEFD3" className={classes.link} rel="noreferrer" target="_blank">
           <Button variant="contained" className={classes.buttonBuy}>
