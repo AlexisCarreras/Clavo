@@ -95,7 +95,7 @@ const HowToBuy = () => {
                   Mercado Pago. <br />
                   Podes abonar tu entrada con los distintos medios de pagos
                   disponibles por la plataforma: Mercado Pago, Débito, Crédito,
-                  y Efectivo (Pago Fácil o Rapipago).
+                  y Efectivo (Pago Fácil, Rapipago o Kioscos).
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -111,12 +111,12 @@ const HowToBuy = () => {
               </AccordionSummary>
               <AccordionDetails>
                 <Typography className={classes.text}>
-                  Una vez realizado y confirmado el pago, podes volver al sitio
-                  para llenar tus datos: Nombre, apellido, celular y email. Es
+                  Una vez realizado y confirmado el pago, tendrás un botón para volver al sitio. <br />
+                  En este paso deberás completar tus datos: Nombre y email (es
                   MUY importante que todos los datos sean reales ya que
                   cualquier consulta o soporte necesario, se necesitaran los
-                  datos del comprador. <br />
-                  Una vez cargados todos los datos, haces click en “CONFIRMAR”.
+                  datos del comprador). <br />
+                  Una vez cargados todos los datos, haces click en “ENVIAR”.
                 </Typography>
               </AccordionDetails>
             </Accordion>
@@ -153,7 +153,7 @@ const HowToBuy = () => {
                 <Typography className={classes.text}>
                   Si ocurre un error o demora en el pago a través de la
                   plataforma de mercado pago, envianos el comprobante o captura
-                  por email: clavosupport@hotmail.com.
+                  por email: clavosoporte@hotmail.com.
                 </Typography>
               </AccordionDetails>
             </Accordion>

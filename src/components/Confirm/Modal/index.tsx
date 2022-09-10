@@ -21,9 +21,8 @@ export default function Modal() {
 
   const [open] = React.useState(true);
 
-  const [valueNombre, setValueNombre] = useState<string>();
-  const [valueCel, setValueCel] = useState<string>();
-  const [valueEmail, setValueEmail] = useState<string>();
+  const [valueNombre, setValueNombre] = useState<string>('');
+  const [valueEmail, setValueEmail] = useState<string>('');
    
  
   //Conexión con WSP 
@@ -58,16 +57,6 @@ export default function Modal() {
             margin="dense"
             id="name"
             label="Nombre"
-            type="text"
-            fullWidth
-          />
-          <TextField
-            required
-            onChange={(e) => setValueCel(e.target.value)}
-            value={valueCel}
-            margin="dense"
-            id="name"
-            label="Celular (WhatsApp)"
             type="text"
             fullWidth
           />
