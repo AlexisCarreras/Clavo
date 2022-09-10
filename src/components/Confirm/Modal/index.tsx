@@ -21,18 +21,19 @@ export default function Modal() {
 
   const [open] = React.useState(true);
 
-  const [valueNombre, setValueNombre] = useState("");
-  const [valueApellido, setValueApellido] = useState("");
-  const [valueCel, setValueCel] = useState("");
-
-  //Conexión con WSP
+  const [valueNombre, setValueNombre] = useState<string>();
+  const [valueCel, setValueCel] = useState<string>();
+  const [valueEmail, setValueEmail] = useState<string>();
+   
+ 
+  //Conexión con WSP 
   function getLinkWhastapp() {
     var url =
       "https://api.whatsapp.com/send?phone=" +
-      "541121936289" +
+      "541121936289" + 
       "&text=" +
       encodeURIComponent(
-        "Gracias por comprar tu entrada para C.L.A.V.O en Circus Bar (12 de Noviembre). Envìa el mensaje para coordinar la entrega de la entrada."
+        `Gracias ${valueNombre} por comprar tu entrada para C.L.A.V.O en Circus Bar (12 de Noviembre). Envía este mensaje para coordinar la entrega de tu entrada física.`
       );
 
     return window.open(url);
@@ -44,11 +45,13 @@ export default function Modal() {
         <DialogTitle id="form-dialog-title">Confirma tus datos</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Completa obligatoriamente todos los datos solicitados, una vez hecho
+            Asegurate de completar todos los datos solicitados, una vez que confirmes
             seras redirigido a Whatsapp donde coordinaras la entrega de tu
-            entrada.
+            entrada física. <br />
+            Además, se iniciara la descarga del comprobante de tu entrada.
           </DialogContentText>
           <TextField
+            required
             onChange={(e) => setValueNombre(e.target.value)}
             value={valueNombre}
             autoFocus
@@ -57,19 +60,9 @@ export default function Modal() {
             label="Nombre"
             type="text"
             fullWidth
-            required
           />
           <TextField
-            onChange={(e) => setValueApellido(e.target.value)}
-            value={valueApellido}
-            margin="dense"
-            id="name"
-            label="Apellido"
-            type="text"
-            fullWidth
             required
-          />
-          <TextField
             onChange={(e) => setValueCel(e.target.value)}
             value={valueCel}
             margin="dense"
@@ -77,7 +70,16 @@ export default function Modal() {
             label="Celular (WhatsApp)"
             type="text"
             fullWidth
+          />
+          <TextField
             required
+            onChange={(e) => setValueEmail(e.target.value)}
+            value={valueEmail}
+            margin="dense"
+            id="name"
+            label="Email"
+            type="text"
+            fullWidth
           />
         </DialogContent>
         <DialogActions>
