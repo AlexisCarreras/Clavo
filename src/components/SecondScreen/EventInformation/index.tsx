@@ -28,7 +28,7 @@ const EventInformation = () => {
   const classes = useStyles();
 
   return ( 
-    <div className='root'> 
+    <div className='rootEvent'> 
       <Paper elevation={10} className='paper'>
         <h6 className='titleInformation'>
           INFORMACIÓN IMPORTANTE
@@ -43,7 +43,7 @@ const EventInformation = () => {
         <p className='titleFecha'>
           {Info.primerFecha}
         </p>
-        <p>
+        <p className='ultimoTexto'>
           {Info.primerValor}
         </p>
         <p className='titleFecha'>

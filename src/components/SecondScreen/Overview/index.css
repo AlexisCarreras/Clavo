@@ -3,13 +3,17 @@
 .root {
     background-color: #F6F6F6;
     margin: 0;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
 .paper {
-    width: 80%;
+    width: 35em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
  
 .flyerImg {
@@ -120,10 +124,13 @@
 @media (max-width:320px){
     .root {
         width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     
     .paper {
-        width: 50%;
+        width: 19em;
     }
      
     .flyerImg {

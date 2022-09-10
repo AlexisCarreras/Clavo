@@ -23,7 +23,7 @@ const Date = () => {
 const Overview = () => {
   return ( 
     <div className='root'> 
-      <Paper className='paper' elevation={10}>
+      <Paper className='paperEvent' elevation={10}>
         <img src={ Flyer } className="flyerImg" alt="Flyer de Clavo" />
         <div className='containerArticles'>
           <article className='articleDate'>
