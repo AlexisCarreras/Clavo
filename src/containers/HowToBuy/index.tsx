@@ -112,7 +112,7 @@ const HowToBuy = () => {
               <AccordionDetails>
                 <Typography className={classes.text}>
                   Una vez realizado y confirmado el pago, tendrás un botón para volver al sitio. <br />
-                  En este paso deberás completar tus datos: Nombre y email (es
+                  En este paso deberás completar con tu nombre (es
                   MUY importante que todos los datos sean reales ya que
                   cualquier consulta o soporte necesario, se necesitaran los
                   datos del comprador). <br />
@@ -133,7 +133,7 @@ const HowToBuy = () => {
               <AccordionDetails>
                 <Typography className={classes.text}>
                   Una vez que realices la compra y completes tus datos, se
-                  descargará el comprobante de tu entrada y serás redirigido a
+                  descargará el comprobante digital de tu entrada y serás redirigido a
                   WhatsApp, donde coordinaras la entrega de tu entrada física
                   durante esa semana.
                 </Typography>

@@ -6,8 +6,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import { makeStyles } from "@material-ui/core";   
-import { Link } from "react-router-dom";
+import { makeStyles } from "@material-ui/core";  
 import Pdf from '../../../assets/eTicketCLAVO.pdf';
   
 const useStyles = makeStyles ({
@@ -16,34 +15,16 @@ const useStyles = makeStyles ({
     },
   })
   
-
 export default function Modal() {
   const classes = useStyles();
 
-  const [open] = React.useState(true);
+  const [open, setOpen] = React.useState(true);
 
   const [valueNombre, setValueNombre] = useState<string>('');
-  const [valueEmail, setValueEmail] = useState<string>('');
-   
-  //Descargar PDF
-  // const download = () => {
-  //   axios({
-  //       url: "http://....",
-  //       method: 'GET', 
-  //       responseType: 'blob',
-  //   }).then( ( response ) => {
-  //       const url = window.URL.createObjectURL(new Blob([response.data]));
-  //       const link = document.createElement('a');
-  //       link.href = url;
-
-  //       link.setAttribute('download', 'archivo.pdf');
-  //       document.body.appendChild(link);
-  //       link.click();
-  //   })
-  // }
  
   //Conexión con WSP 
   function getLinkWhastapp() {
+    setOpen(false);
     var url =
       "https://api.whatsapp.com/send?phone=" +
       "541121936289" + 
@@ -58,10 +39,10 @@ export default function Modal() {
   return (
     <div>
       <Dialog open={open} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">Confirma tus datos</DialogTitle>
+        <DialogTitle id="form-dialog-title">Confirma tu Nombre</DialogTitle>
         <DialogContent>
           <DialogContentText>
-            Asegurate de completar todos los datos solicitados, una vez que confirmes
+            Asegurate de completar el dato solicitado, una vez que confirmes
             seras redirigido a Whatsapp donde coordinaras la entrega de tu
             entrada física. <br />
             Además, se iniciara la descarga del comprobante de tu entrada.
@@ -77,25 +58,13 @@ export default function Modal() {
             type="text"
             fullWidth
           />
-          <TextField
-            required
-            onChange={(e) => setValueEmail(e.target.value)}
-            value={valueEmail}
-            margin="dense"
-            id="name"
-            label="Email"
-            type="text"
-            fullWidth
-          />
         </DialogContent>
         <DialogActions>  
-          <Link to="/ObtenerEntradas" className={classes.link}>
-          <a href={Pdf} target="_blank" rel="noopener noreferrer" download="eTicketCLAVO.pdf"> 
+          <a href={Pdf} className={classes.link} target="_blank" rel="noopener noreferrer" download="eTicketCLAVO.pdf"> 
             <Button onClick={() => getLinkWhastapp()} color="primary">
               Enviar
             </Button>
           </a>
-          </Link>    
         </DialogActions>
       </Dialog>
     </div>
