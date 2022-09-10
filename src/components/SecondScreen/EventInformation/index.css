@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
 
 .paper {
-    width: 40vw;
+    width: 35em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,14 +16,14 @@
     text-align: center;
     font-family: 'Nunito';
     font-weight: 600;
-    font-size: 15px;
+    font-size: 0.9em;
     padding: 7px;
 }
 
 .titleFecha {
     font-family: 'Nunito';
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1em;
     color: #1A406F;
     margin-top: 35px;
     margin-bottom: 10px;
