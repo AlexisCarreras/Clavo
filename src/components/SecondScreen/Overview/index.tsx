@@ -1,4 +1,3 @@
-
 import { Button, Paper } from '@material-ui/core';
 import Flyer from '../../../assets/Images/flyer.jpg';
 import RoomIcon from '@material-ui/icons/Room';
@@ -24,7 +23,7 @@ const Date = () => {
 const Overview = () => {
   return ( 
     <div className='root'> 
-      <Paper elevation={10}>
+      <Paper className='paper' elevation={10}>
         <img src={ Flyer } className="flyerImg" alt="Flyer de Clavo" />
         <div className='containerArticles'>
           <article className='articleDate'>

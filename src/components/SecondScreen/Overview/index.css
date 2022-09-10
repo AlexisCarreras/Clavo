@@ -3,17 +3,26 @@
 .root {
     background-color: #F6F6F6;
     margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.paper {
+    width: 80%;
 }
  
 .flyerImg {
-    width: 500px;
+    width: 35em;
+    background-size: cover;
+
 }
 
 .containerArticles {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 35em;
 }
 
 .articleDate {
