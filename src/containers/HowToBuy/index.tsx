@@ -28,7 +28,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     color: "#333",
     paddingBottom: "5vh",
-    fontSize: "1.5em",
+    fontSize: "1.2em",
+    textAlign: 'center', 
   },
   heading: {
     color: "#FFFF",
