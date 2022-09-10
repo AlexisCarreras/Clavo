@@ -7,8 +7,9 @@ const useStyles = makeStyles ({
   text: {
     fontFamily: 'Inter',
     fontStyle: 'normal',
-    fontSize: '30px',
+    fontSize: '2em',
     color: '#FAFAFA',
+    margin: '0.5em 0 0.8em 0'
   },
 }); 
 
