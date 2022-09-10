@@ -52,6 +52,57 @@
     margin-bottom: 35px;
 }
 
+@media (max-width:480px){
+    .paperEvent {
+        width: 35em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .titleInformation {
+        margin: 35px 0 15px 0;
+        background-color: #1A406F;
+        width: 85%;
+        color: #fff;
+        text-align: center;
+        font-family: 'Nunito';
+        font-weight: 600;
+        font-size: 0.9em;
+        padding: 7px;
+    }
+    
+    .titleFecha {
+        font-family: 'Nunito';
+        font-weight: 700;
+        font-size: 1em;
+        color: #1A406F;
+        margin-top: 35px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    
+    .divider {
+        width: 80%;
+    }
+    
+    .cabecera {
+        margin-top: 35px;
+        text-align: center;
+    }
+    
+    .subCabecera {
+        margin-bottom: 55px;
+        text-align: center;
+    }
+    
+    .ultimoTexto {
+        margin-bottom: 35px;
+        text-align: center;
+    }
+}
+
 @media (max-width:320px){
     .paperEvent {
         width: 35em;
