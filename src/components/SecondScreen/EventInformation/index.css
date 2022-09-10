@@ -98,6 +98,12 @@
         text-align: center;
         width: 100%;
     }
+
+    .textHorario {
+        margin-bottom: 5px;
+        text-align: center;
+        width: 100%;
+    }
     
     .ultimoTexto {
         margin-bottom: 35px;

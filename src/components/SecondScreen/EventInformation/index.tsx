@@ -56,20 +56,20 @@ const EventInformation = () => {
         <p className='titleFecha'>
           {Info.asistentes}
         </p>
-        <p>
+        <p className='textHorario'>
           {Info.infoAsistentes1}
         </p>
-        <p className='ultimoTexto'> 
+        <p className='textHorario'> 
           {Info.infoAsistentes2}
         </p>
         <Divider className='divider'/> 
         <p className='titleFecha'>
           {Info.tituloHorario} 
         </p>
-        <p>
+        <p className='textHorario'>
           {Info.horarioPuerta}
         </p>
-        <p>
+        <p className='textHorario'>
           {Info.horarioClavo} 
         </p>
         <p className='ultimoTexto'> 
