@@ -6,9 +6,10 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";   
 import { Link } from "react-router-dom";
-
+import Pdf from '../../../assets/eTicketCLAVO.pdf';
+  
 const useStyles = makeStyles ({
     link: { 
       textDecoration: 'none',
@@ -24,6 +25,22 @@ export default function Modal() {
   const [valueNombre, setValueNombre] = useState<string>('');
   const [valueEmail, setValueEmail] = useState<string>('');
    
+  //Descargar PDF
+  // const download = () => {
+  //   axios({
+  //       url: "http://....",
+  //       method: 'GET', 
+  //       responseType: 'blob',
+  //   }).then( ( response ) => {
+  //       const url = window.URL.createObjectURL(new Blob([response.data]));
+  //       const link = document.createElement('a');
+  //       link.href = url;
+
+  //       link.setAttribute('download', 'archivo.pdf');
+  //       document.body.appendChild(link);
+  //       link.click();
+  //   })
+  // }
  
   //Conexión con WSP 
   function getLinkWhastapp() {
@@ -71,12 +88,14 @@ export default function Modal() {
             fullWidth
           />
         </DialogContent>
-        <DialogActions>
+        <DialogActions>  
           <Link to="/ObtenerEntradas" className={classes.link}>
+          <a href={Pdf} target="_blank" rel="noopener noreferrer" download="eTicketCLAVO.pdf"> 
             <Button onClick={() => getLinkWhastapp()} color="primary">
               Enviar
             </Button>
-          </Link>
+          </a>
+          </Link>    
         </DialogActions>
       </Dialog>
     </div>
