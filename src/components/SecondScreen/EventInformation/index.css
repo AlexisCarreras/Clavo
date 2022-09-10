@@ -90,16 +90,19 @@
     .cabecera {
         margin-top: 35px;
         text-align: center;
+        width: 100%;
     }
     
     .subCabecera {
         margin-bottom: 55px;
         text-align: center;
+        width: 100%;
     }
     
     .ultimoTexto {
         margin-bottom: 35px;
         text-align: center;
+        width: 100%;
     }
 }
 
