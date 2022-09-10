@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     color: '#FFFF'
   }, 
   backButton: {
-    marginLeft: theme.spacing(8),
+    marginLeft: theme.spacing(3),
   },
   textBack: {
     flexGrow: 1,
@@ -37,7 +37,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: theme.spacing(1),
   },
   button: {
-    marginRight: theme.spacing(8),
+    marginRight: theme.spacing(3),
     background: '#3D00E6',
     boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
     borderRadius: '10px',
