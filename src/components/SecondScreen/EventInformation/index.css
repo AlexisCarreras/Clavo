@@ -1,164 +1,244 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap");
 
 .rootEvent {
-    background-color: #F6F6F6;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  background-color: #f6f6f6;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .paperEvent {
+  width: 35em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleInformation {
+  margin: 35px 0 15px 0;
+  background-color: #1a406f;
+  width: 85%;
+  color: #fff;
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 7px;
+}
+
+.titleFecha {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 1em;
+  color: #1a406f;
+  margin-top: 35px;
+  margin-bottom: 10px;
+}
+
+.divider {
+  width: 80%;
+}
+
+.cabecera {
+  margin-top: 35px;
+}
+
+.subCabecera {
+  margin-bottom: 55px;
+}
+
+.ultimoTexto {
+  margin-bottom: 35px;
+}
+
+.containerCount {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* align-items: center; */
+  width: 95%;
+  background: #515151;
+  padding: 1em 0 1em 0;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.entradas {
+  font-size: 1.2em;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27px;
+  color: #ffffff;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 0.3em;
+  margin-top: 0.5em;
+}
+
+.textCant {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2em;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.buttonsCount {
+    display: flex;
+    align-items: center;
+}
+
+.row1 {
+  display: flex;
+}
+
+.row2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 1em;
+  margin-bottom: 1.1em;
+  align-items: center;
+}
+
+.buttonCount {
+    color: #fff;
+    font-size: 1.5em;
+}
+
+.dividerEntradas {
+  width: 90% !important;
+  background-color: white !important;
+  margin: auto !important;
+}
+
+.dividerCount {
+    width: 90% !important;
+    background-color: white !important;
+    margin: auto !important;
+    margin-top: 0.1em !important;
+  }
+
+.count {
+  font-family: "Nunito";
+  font-weight: 700;
+  font-size: 1em;
+  color: #ffff;
+  margin: 0 1em 0 1em;
+}
+
+@media (max-width: 480px) {
+  .paperEvent {
     width: 35em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+  }
 
-.titleInformation {
+  .titleInformation {
     margin: 35px 0 15px 0;
-    background-color: #1A406F;
+    background-color: #1a406f;
     width: 85%;
     color: #fff;
     text-align: center;
-    font-family: 'Nunito';
+    font-family: "Nunito";
     font-weight: 600;
     font-size: 0.9em;
     padding: 7px;
-}
+  }
 
-.titleFecha {
-    font-family: 'Nunito';
+  .titleFecha {
+    font-family: "Nunito";
     font-weight: 700;
     font-size: 1em;
-    color: #1A406F;
+    color: #1a406f;
     margin-top: 35px;
     margin-bottom: 10px;
-}
+    text-align: center;
+  }
 
-.divider {
+  .divider {
     width: 80%;
-}
+  }
 
-.cabecera {
+  .cabecera {
     margin-top: 35px;
-}
+    text-align: center;
+    width: 100%;
+  }
 
-.subCabecera {
+  .subCabecera {
     margin-bottom: 55px;
-}
+    text-align: center;
+    width: 100%;
+  }
 
-.ultimoTexto {
+  .textHorario {
+    margin-bottom: 5px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .ultimoTexto {
     margin-bottom: 35px;
+    text-align: center;
+    width: 100%;
+  }
 }
 
-@media (max-width:480px){
-    .paperEvent {
-        width: 35em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .titleInformation {
-        margin: 35px 0 15px 0;
-        background-color: #1A406F;
-        width: 85%;
-        color: #fff;
-        text-align: center;
-        font-family: 'Nunito';
-        font-weight: 600;
-        font-size: 0.9em;
-        padding: 7px;
-    }
-    
-    .titleFecha {
-        font-family: 'Nunito';
-        font-weight: 700;
-        font-size: 1em;
-        color: #1A406F;
-        margin-top: 35px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    
-    .divider {
-        width: 80%;
-    }
-    
-    .cabecera {
-        margin-top: 35px;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .subCabecera {
-        margin-bottom: 55px;
-        text-align: center;
-        width: 100%;
-    }
+@media (max-width: 320px) {
+  .paperEvent {
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .textHorario {
-        margin-bottom: 5px;
-        text-align: center;
-        width: 100%;
-    }
-    
-    .ultimoTexto {
-        margin-bottom: 35px;
-        text-align: center;
-        width: 100%;
-    }
-}
+  .titleInformation {
+    margin: 35px 0 15px 0;
+    background-color: #1a406f;
+    width: 85%;
+    color: #fff;
+    text-align: center;
+    font-family: "Nunito";
+    font-weight: 600;
+    font-size: 0.9em;
+    padding: 7px;
+  }
 
-@media (max-width:320px){
-    .paperEvent {
-        width: 35em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .titleInformation {
-        margin: 35px 0 15px 0;
-        background-color: #1A406F;
-        width: 85%;
-        color: #fff;
-        text-align: center;
-        font-family: 'Nunito';
-        font-weight: 600;
-        font-size: 0.9em;
-        padding: 7px;
-    }
-    
-    .titleFecha {
-        font-family: 'Nunito';
-        font-weight: 700;
-        font-size: 1em;
-        color: #1A406F;
-        margin-top: 35px;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-    
-    .divider {
-        width: 80%;
-    }
-    
-    .cabecera {
-        margin-top: 35px;
-        text-align: center;
-    }
-    
-    .subCabecera {
-        margin-bottom: 55px;
-        text-align: center;
-    }
-    
-    .ultimoTexto {
-        margin-bottom: 35px;
-        text-align: center;
-    }
+  .titleFecha {
+    font-family: "Nunito";
+    font-weight: 700;
+    font-size: 1em;
+    color: #1a406f;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .divider {
+    width: 80%;
+  }
+
+  .cabecera {
+    margin-top: 35px;
+    text-align: center;
+  }
+
+  .subCabecera {
+    margin-bottom: 55px;
+    text-align: center;
+  }
+
+  .ultimoTexto {
+    margin-bottom: 35px;
+    text-align: center;
+  }
 }
