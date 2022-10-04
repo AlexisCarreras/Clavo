@@ -33,7 +33,6 @@ const EventInformation = () => {
   const classes = useStyles();
 
   const [count, setCount] = useState(0);
-  const [precio, setPrecio] = useState(1500);
 
   const handleCount = (operation: string) => {
     if (operation === "-") {
